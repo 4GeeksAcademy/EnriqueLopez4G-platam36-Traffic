@@ -1,0 +1,11 @@
+.semaforo {
+    width           : 100px; /* Ancho del semáforo */
+    height          : 300px; /* Altura del semáforo */
+    background-color: black; /* Color de fondo del semáforo */
+    border-radius   : 10px; /* Bordes redondeados */
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-around; /* Espaciado entre luces */
+    align-items     : center;
+    margin          : 50px auto; /* Centrar el semáforo */
+}

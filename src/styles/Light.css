@@ -1,0 +1,13 @@
+.light {
+    width            : 60px; /* Ancho de las luces */
+    height           : 60px; /* Alto de las luces */
+    border-radius    : 50%; /* Forma circular */
+    background-color : gray; /* Color por defecto de las luces */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.lightSelected {
+    border-radius: 50%; /* Forma circular */
+    background-color: inherit; /* Mantiene el color del círculo */
+    box-shadow: 0 0 20px 20px rgba(255, 215, 0, 0.7); /* Sombra dorada radiante */
+}

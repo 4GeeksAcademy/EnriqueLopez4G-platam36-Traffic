@@ -1,25 +1,22 @@
-import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import React, {useState} from "react";
+import TrafficLight from "./TrafficLight";
 
 //create your first component
 const Home = () => {
+	const [order, setOrder] = useState(true);
+
+	const handleOrder=()=> {
+		setOrder(!order);
+	}
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container">
+			<h2>Traffic Light</h2>
+        	<hr/>
+        	<h3 className ="text-primary">Enrique Lopez 4Geeks</h3>
+			<TrafficLight order = {order}/>
+			<button type="button" className="btn btn-primary" onClick = {handleOrder} >Interchange Colors</button>
 		</div>
+		
 	);
 };
 
